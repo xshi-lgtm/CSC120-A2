@@ -19,7 +19,7 @@ class ResaleShop:
     
     def get_inventory(self):
         for item in self.inventory:
-            print(f'Item ID: {self.inventory.index(item)} - [description:{item.description}], [processor type:{item.processor_type}], [hard drive capacity:{item.hard_drive_capacity}], [memory:{item.memory}], [operating system:{item.operating_system}], [year made:{item.year_made}], [price:{item.price}]')
+            print(f'Item ID {self.inventory.index(item)} : [description: {item.description}], [processor type: {item.processor_type}], [hard drive capacity: {item.hard_drive_capacity}], [memory: {item.memory}], [operating system: {item.operating_system}], [year made: {item.year_made}], [price: {item.price}]')
 
     def update_price(self, computer: Computer,new_price:int):
         if computer in self.inventory:
