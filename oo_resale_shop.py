@@ -2,8 +2,9 @@ from computer import *
 from typing import Optional
 
 class ResaleShop:
+    inventory: list
 
-    def __init__(self):
+    def __init__(self, item_0):
         self.inventory = [item_0]
 
     def buy(self, computer: Computer):
@@ -48,7 +49,7 @@ item_1 = Computer("Mac Pro (Late 2013)", "3.5 GHc 6-Core Intel Xeon E5", 1024, 6
 
 def main():
 
-    shop: ResaleShop = ResaleShop()
+    shop: ResaleShop = ResaleShop(item_0)
 
     print("-" * 21)
     print("COMPUTER RESALE STORE")
