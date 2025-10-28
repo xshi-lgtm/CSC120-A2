@@ -17,8 +17,8 @@ class ResaleShop:
     """
     This constructor takes in one computer object and stores in the inventory.
     """
-    def __init__(self, item_0):
-        self.inventory = [item_0] # initialize the inventory with one computer object
+    def __init__(self):
+        self.inventory = [] # initialize the inventory with one computer object
 
     """
     This method adds new computers to the inventory. 
@@ -80,8 +80,9 @@ item_1 = Computer("Mac Pro (Late 2013)", "3.5 GHc 6-Core Intel Xeon E5", 1024, 6
 
 def main():
 
-    # initialize a ResaleShop with a computer
-    shop: ResaleShop = ResaleShop(item_0)
+    shop: ResaleShop = ResaleShop()  # starts with an empty inventory
+    shop.inventory.append(item_0) # appends a new item to the inventory for the following codes to operate correctly
+
 
     # Print a little banner
     print("-" * 21)

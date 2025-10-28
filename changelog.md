@@ -1,0 +1,1 @@
+1. We changed line 20, 21 in this version. We deleted the initialized content (originally item_0) in the inventory. And then in line 83, we created a new ResaleShop object named shop with an empty initialized inventory list. After that, line 84 appends the initial computer to the inventory to make the following codes run smoothly. 
