@@ -18,7 +18,7 @@ class ResaleShop:
     This constructor takes in one computer object and stores in the inventory.
     """
     def __init__(self):
-        self.inventory = [] # initialize the inventory with one computer object
+        self.inventory = [] # initialize the inventory with an empty list
 
     """
     This method adds new computers to the inventory. 
